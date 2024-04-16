@@ -31,7 +31,7 @@ if(isset($_POST['num_password'])){
 
   $_SESSION['password_finale'] = passwordRandom();
 
-  header('Location: /redirect.php');
+  header('Location: ./redirect.php');
 }
 
 ?>
