@@ -1,6 +1,7 @@
 <?php
 
-require_once __DIR__ . './functions.php';
+session_start();
+require __DIR__ . './functions.php';
 
 
 ?>
@@ -18,10 +19,8 @@ require_once __DIR__ . './functions.php';
   <div class="container mt-3">
   <h1>PHP Strong Password Generator</h1>
 
-  <form action="index.php" method="GET">
-
-    <h3 class="mt-3">Password generata: <?php echo passwordRandom() ?></h3>
-    
+  <form action="index.php" method="POST">
+  
     <div class="my-5">
       <p>Seleziona la lunghezza della password</p>
       <input type="number" name="num_password">
