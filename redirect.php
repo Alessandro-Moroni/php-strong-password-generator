@@ -17,6 +17,8 @@ require __DIR__ . './functions.php';
 <body>
   <div class="container mt-5 ">
     <h2>Password generata: <?php echo $_SESSION['password_finale'] ?></h2>
+
+    <a href="logout.php">Logout pagina iniziale</a>
   </div>
   
 </body>
